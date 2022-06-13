@@ -2,6 +2,7 @@ function draggable(id) {
     let box = document.getElementById(id);
    
     let clicked = false;
+     box.style.position = "absolute";
 
     box.onmousedown = () => {
         console.log("ok");
@@ -17,7 +18,7 @@ function draggable(id) {
         if (e.clientX < 50 || e.clientX > screen.width - 50) return;
         // console.log("helo");
         // let e = window.event;
-         box.style.position = "absolute";
+        
         box.style.left = e.clientX - 50 + "px";
         box.style.top = e.clientY - 50 + "px";
     };
