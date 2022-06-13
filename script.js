@@ -3,6 +3,7 @@ function draggable(id) {
    
     let clicked = false;
      box.style.position = "absolute";
+    box.style.display = "inline";
 
     box.onmousedown = () => {
         console.log("ok");
