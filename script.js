@@ -1,5 +1,6 @@
 function draggable(id) {
     let box = document.getElementById(id);
+    box.style.display = 'absolute';
     let clicked = false;
 
     box.onmousedown = () => {
