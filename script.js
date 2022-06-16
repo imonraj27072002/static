@@ -5,7 +5,7 @@ function draggable(id) {
    
 
     box.onmousedown = () => {
-        console.log("ok");
+        console.log(box.clientWidth/2);
         clicked = true;
     };
 
